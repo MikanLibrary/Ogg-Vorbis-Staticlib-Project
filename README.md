@@ -1,21 +1,23 @@
-# libogg-vobis�Ƃ��̐ÓI���C�u�����r���h�v���W�F�N�g
+# libogg-vobisとかの静的ライブラリビルドプロジェクト
 
-## �菇
+## 手順
 
-### libogg��libborvis���_�E�����[�h
+### liboggとlibborvisをダウンロード
 
 http://www.xiph.org/downloads/
 
-### ���l�[���Ɣz�u
+### リネームと配置
 
-�𓀂���libogg-x.x.x��libogg�ɂ���B
-�𓀂Ƀt�H���_������Alibogg-x.x.x\libogg-x.x.x�ƂȂ��Ă���ꍇ�́A���ɂ�����̂��g���B
+解凍したlibogg-x.x.xをliboggにする。
+解凍にフォルダが作られ、libogg-x.x.x\libogg-x.x.xとなっている場合は、中にあるものを使う。
 
-libvovis���𓀂��A�t�@�C��������o�[�W��������菜���A���̒���libogg������B
+libvovisも解凍し、ファイル名からバージョンを取り除き、その中にliboggを入れる。
 
-�[�I�Șb�A���̂悤�ȏ�ԂɂȂ�Ηǂ��B
+端的な話、次のような状態になれば良い。
 
-libvorbis\include ������
-libvorvis\libogg\include ������
+libvorbis\include が存在
+libvorvis\libogg\include が存在
 
-libvorbis\libogg\win32\VS2015\��libvorbis\win32\VS2015\���Ƀv���W�F�N�g������̂Ńr���h�B
+### ビルド
+
+libvorbis\libogg\win32\VS2015\とlibvorbis\win32\VS2015\内にプロジェクトがあるのでビルド。
